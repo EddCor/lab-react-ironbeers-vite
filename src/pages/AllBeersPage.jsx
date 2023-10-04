@@ -21,7 +21,7 @@ async function fetchAllBeers() {
     useEffect(() => { fetchAllBeers()
 
     }, []
-        
+         
     );
 console.log (beers)
     return (
@@ -35,6 +35,7 @@ console.log (beers)
                    <img src= {Beer.image_url} style={{height: "100px"}}/> 
                     <p className="list-group-item list-group-item-action">{Beer.name}</p>
                     <p> {Beer.tagline} </p>
+                    <p>{Beer.contributed_by}</p>
                   </Link>
                 </li>
               ))}

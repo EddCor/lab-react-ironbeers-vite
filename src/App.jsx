@@ -20,6 +20,9 @@ function App() {
       <Route path= "/new-beer" element ={<AddBeerPage/>} />
       <Route path= "/beers/:beerId" element = { <BeerDetailsPage/> }/>
 
+      
+      <Route path='*' element={<h1>404 Page</h1>} />
+
       </Routes>
 
 

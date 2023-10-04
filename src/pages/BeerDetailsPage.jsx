@@ -29,13 +29,17 @@ function BeerDetailsPage() {
   
         return  (
             <>
-              {isLoading ? (
+              {isLoading ? (    
                 <h1>Loading...</h1>
               ) : (
                 <>
                   <img src={beer?.image_url} alt={beer?.name} style={{ height: '100px' }} />
                   <p className="list-group-item list-group-item-action">{beer?.name}</p>
                   <p>{beer?.tagline}</p>
+                  <p>{beer.first_brewed}</p>
+                <p>{beer.attenuation_level}</p>
+                 <p>{beer.description}</p>
+                 <p>{beer.contributed_by}</p>
                 </>
               )}
             </>
